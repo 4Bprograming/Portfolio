@@ -1,0 +1,88 @@
+.mainButton{
+    color:black;
+    border-color: black;
+    background-color: unset;
+}
+.contac{
+    width: 400px;
+
+}
+.formContact {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  font-size: 16px;
+}
+.inputContact {
+width: 100%;
+height: 35px;
+padding: 7px;
+outline: none;
+border-radius: 5px;
+border: 1px solid rgb(220, 220, 220);
+}
+.inputContact:focus {
+    border: 2px solid rgba(0, 206, 158, 1);
+}
+  
+.textareaContact {
+max-width: 100%;
+min-width: 100%;
+width: 100%;
+max-height: 100px;
+min-height: 100px;
+padding: 7px;
+outline: none;
+border-radius: 5px;
+border: 1px solid rgb(220, 220, 220);
+/* &:focus {
+    border: 2px solid rgba(0, 206, 158, 1);
+} */
+}
+.labelContac {
+margin-top: 1rem;
+}
+.inputContact[type="submit"] {
+margin-top: 2rem;
+cursor: pointer;
+background: rgb(33, 87, 106);
+color: white;
+border: none;
+}
+
+.WSA{
+    color:rgb(32, 113, 58);
+    font-size:60px;
+    border-radius: 300px;
+
+}
+.btn-flotante {
+	font-size: 60px; /* Cambiar el tamaño de la tipografia */
+	text-transform: uppercase; /* Texto en mayusculas */
+	font-weight: bold; /* Fuente en negrita o bold */
+	color:rgb(32, 113, 58);; /* Color del texto */
+	border-radius: 200px; /* Borde del boton */
+	letter-spacing: 2px; /* Espacio entre letras */
+	background-color: #fcfafb; /* Color de fondo */
+	padding: 25px 25px; /* Relleno del boton */
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	transition: all 300ms ease 0ms;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	z-index: 99;
+}
+.btn-flotante:hover {
+	background-color: #2ca577; /* Color de fondo al pasar el cursor */
+	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+	transform: translateY(-7px);
+}
+@media only screen and (max-width: 600px) {
+ 	.btn-flotante {
+		font-size: 14px;
+		padding: 12px 20px;
+		bottom: 20px;
+		right: 20px;
+	}
+}
