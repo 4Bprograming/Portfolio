@@ -3,6 +3,7 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from '../../assets/4b.png';
 import { HashLink } from "react-router-hash-link";
 import { BrowserRouter as Router } from "react-router-dom";
+import './Navbar.css'
 
 const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -71,9 +72,9 @@ const NavBar = () => {
                   Projects
                 </Nav.Link>
               </Nav>
-              <span className="navbar-text">
+              <span >
                 <HashLink to="#connect">
-                  <button className="vvd">
+                  <button className="button-contact">
                     <span>Contáctanos</span>
                   </button>
                 </HashLink>
