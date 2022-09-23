@@ -4,6 +4,7 @@ import headerImg from "../../assets/header-img.svg";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
+import { HashLink } from "react-router-hash-link";
 
 function Landing() {
   const [loopNum, setLoopNum] = useState(0);
@@ -64,7 +65,10 @@ function Landing() {
                 >
                   <span className="tagline">Bienvenidos </span>
                   <h1>
-                    {`Somos 4B Diseños`}{" "}
+                    {`Somos 4B Diseños`}
+                    <br/>
+                    {" "}
+                  
                     <span
                       className="txt-rotate"
                       dataPeriod="1000"
@@ -81,9 +85,11 @@ function Landing() {
                   tiempo corto de respuesta, ¡consulta sin ningún compromiso!
 
                   </p>
+{/*                  
                   <button onClick={() => console.log("connect")}>
                     Contáctanos <ArrowRightCircle size={25} />
-                  </button>
+                  </button> */}
+              
                 </div>
               )}
             </TrackVisibility>

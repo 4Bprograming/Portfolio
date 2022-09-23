@@ -1,0 +1,23 @@
+.contactAll{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.networks{
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 48px;
+    flex-wrap: wrap;
+    align-items: stretch;
+
+}
+.gitHub{
+    color: white;
+
+}
+.instagram{
+    color: beige;
+
+}
