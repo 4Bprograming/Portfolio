@@ -85,11 +85,11 @@ function Landing() {
                   tiempo corto de respuesta, ¡consulta sin ningún compromiso!
 
                   </p>
-                  <HashLink to="#connect">
+{/*                  
                   <button onClick={() => console.log("connect")}>
                     Contáctanos <ArrowRightCircle size={25} />
-                  </button>
-                </HashLink>
+                  </button> */}
+              
                 </div>
               )}
             </TrackVisibility>
