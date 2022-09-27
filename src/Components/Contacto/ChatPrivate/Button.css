@@ -1,0 +1,45 @@
+.start-animate{
+    width: 200px;
+    background-image: linear-gradient(115deg, #4fcf70,#fad648, #a767e5, #12bcfe, #44ce7b);
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    top:45vh;
+    font-weight: normal;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.start-animate:hover{
+    -webkit-animation: play 1.6s ease-in infinite;
+}
+.start-animate span {
+    padding: 14px 0;
+    font-size: 18px;
+    display: block;
+    margin: 3px;
+    background: rgb(168, 156, 156);
+    border-radius: 3px;
+}
+@-webkit-keyframes play{
+    0% {
+        background-position: 0px;
+    }
+    20%{
+        background-position: -100px;
+    }
+    35%{
+        background-position: -180px;
+    }
+    50%{
+        background-position: -210px;
+    }
+    80%{
+        background-position: -350%;
+    }
+    100%{
+        background-position: -390%;
+    }
+}
