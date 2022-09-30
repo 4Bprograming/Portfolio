@@ -7,6 +7,7 @@ import * as EmailValidator from "email-validator";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useCollection } from "react-firebase-hooks/firestore";
 
+
 const getUser = (users, userLogged) =>
 users?.filter((user) => user !== userLogged?.email)[0];
 
