@@ -1,6 +1,7 @@
 import { createRoot } from "react-dom/client";
 import App from "./App";
 import GlobalStyle from "./styles/global";
+import {Link} from 'react-router-dom'
 
 import React from 'react'
 
@@ -9,7 +10,9 @@ function ChatPrivate() {
     <>
      <App />
      <GlobalStyle />
-     <p>hola</p>
+     <Link to="/" >
+     <p>Regresar</p>
+     </Link>
    </>
   )
 }

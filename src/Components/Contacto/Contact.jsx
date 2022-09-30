@@ -14,7 +14,7 @@ function Contact() {
               <Email/>
           
 
-          <div className='networks'>
+          <div className='networks '>
           <a href='https://github.com/4Bprograming'>
               <AiFillGithub className='gitHub'/>
           </a>

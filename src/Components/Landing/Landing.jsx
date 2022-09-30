@@ -65,7 +65,7 @@ function Landing() {
                 >
                   <span className="tagline">Bienvenidos </span>
                   <h1>
-                    {`Somos 4B Diseños`}
+                    {`Somos 4B Programming`}
                     <br/>
                     {" "}
                   

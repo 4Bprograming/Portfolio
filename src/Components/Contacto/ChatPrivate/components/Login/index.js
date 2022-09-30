@@ -8,7 +8,7 @@ const Login = () => {
   };
   return (
     <C.Container>
-      <C.Button onClick={handleSignin}>Login com Google</C.Button>
+      <C.Button onClick={handleSignin}>Login con Google</C.Button>
     </C.Container>
   );
 };
