@@ -53,12 +53,12 @@ console.log("getUserItemsDEfault", getUserItem ,)
         chatsSnapshot2?.docs.length!==0 ? 
         <div>
           <MdMessage />
-          <C.Title>Chat 4B</C.Title>
-          <C.Info>Ahora podrás emviar mensajes.</C.Info>
+          <C.Title style={{ color: "black" }}>Chat 4B</C.Title>
+          <C.Info style={{ color: "black" }}>Ahora podrás emviar mensajes.</C.Info>
         </div>:
         <div>
-          <C.Title>Chat 4B</C.Title>
-          <C.Info>Click en el Logo para conversar.</C.Info>
+          <C.Title style={{ color: "black" }}>Chat 4B</C.Title>
+          <C.Info style={{ color: "black" }}>Click en el Logo para conversar.</C.Info>
         <MdMessage onClick={handleCreateChat2} />
         </div>
          
