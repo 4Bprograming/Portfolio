@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 //import './Button.css'
-import chat from '../../../assets/chat.png'
+import chat from '../../../assets/chat.webp'
 
 function Button() {
   return (
@@ -9,7 +9,7 @@ function Button() {
         <Link to="/chat" target="_blank"  className='btn-flotante'>
            <button>
             {/* Chatea con nosotros */}
-            <img src={chat} alt="" width="250px" height="250px" className='img-chat' />
+            <img src={chat} alt="" width="150px" height="150px" className='img-chat' />
            </button>
         </Link>
         
