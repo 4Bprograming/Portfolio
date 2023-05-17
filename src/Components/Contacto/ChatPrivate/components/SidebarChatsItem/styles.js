@@ -6,9 +6,9 @@ export const Container = styled.div`
   justify-content: start;
   padding: 15px 20px;
   cursor: pointer;
-
+  background-color: black;
   &:hover {
-    background-color: #f0f2f5;
+    background-color: #15b983;
   }
 
   svg {

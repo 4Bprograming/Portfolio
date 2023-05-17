@@ -23,11 +23,12 @@ const App = () => {
   if (loading) return <Loading />;
 
   if (!user) return <Login />;
-
+console.log('user=>App==>', user);
+console.log('userChat=>App==>', userChat);
   return (
     <C.Container>
       <Sidebar setUserChat={setUserChat} userChat={userChat} />
-      <Chat userChat={userChat} />
+      <Chat userChat={userChat} user={user.email}/>
     </C.Container>
   );
 };

@@ -8,7 +8,7 @@ import { useCollection } from "react-firebase-hooks/firestore";
 
 const SidebarHeader = ({ setUserChat }) => {
   const [user] = useAuthState(auth);
-  console.log('user', user)
+  // console.log('user', user)
   const refChat = db
     .collection("chats")
     .where("users", "array-contains", user.email);
