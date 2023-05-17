@@ -15,9 +15,11 @@ export const Container = styled.div`
   }
 `;
 
-export const Content = styled.div``;
+export const Content = styled.div`color:black
+background-color: rgba(0, 0, 0, 0.2);`;
 
 export const Divider = styled.div`
   margin: 0 10px;
   border-top: solid 1px #ddd;
+  
 `;

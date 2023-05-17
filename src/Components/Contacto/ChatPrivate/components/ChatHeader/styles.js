@@ -9,6 +9,7 @@ export const Container = styled.div`
   justify-content: space-between;
   box-shadow: 0 1px 2px #0003;
   z-index: 1;
+  color:black
 `;
 
 export const UserInfo = styled.div`

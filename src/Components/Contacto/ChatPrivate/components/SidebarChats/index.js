@@ -7,20 +7,20 @@ import SidebarChatsItem from "../SidebarChatsItem";
 
 const SidebarChats = ({ setUserChat, userChat }) => {
   const [user] = useAuthState(auth);
-  console.log('user', user)
-  console.log('setUser...', setUserChat)
-  console.log('userchat...', userChat)
+  // console.log('user...', user)
+  // console.log('setUser...', setUserChat)
+  // console.log('user...', userChat)
   const refChat = db
     .collection("chats")
     .where("users", "array-contains", user.email);
    
     const refChat2 = db
     .collection("chats")
-    .where("user", "array-contains", user.email);
-   console.log('refChat2', refChat2);
+    .where("aObTvQREFTdEty7C7oSV8IXwxHE3", "array-contains", user.email);
+  //  console.log('refChat2', refChat2);
   const [chatsSnapshot] = useCollection(refChat);
   const [chatsSnapshot2] = useCollection(refChat2);
-  console.log('chatsSnapshot', chatsSnapshot2)
+  // console.log('chatsSnapshot', chatsSnapshot2)
 
   return (
     <C.Container>

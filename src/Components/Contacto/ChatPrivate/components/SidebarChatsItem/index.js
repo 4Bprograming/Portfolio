@@ -8,7 +8,7 @@ const getUser = (users, userLogged) =>
   users?.filter((user) => user !== userLogged?.email)[0];
 
 const SidebarChatsItem = ({ id, users, user, setUserChat, active }) => {
-  console.log('userInvitado', user)
+  // console.log('userInvitado', user)
   const [getUserItem] = useCollection(
     db.collection("users").where("email", "==", getUser(users, user))
   );

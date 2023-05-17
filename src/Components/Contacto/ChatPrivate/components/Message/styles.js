@@ -22,6 +22,7 @@ export const Content = styled.div`
   flex-direction: column;
   padding: 3px;
   max-width: 80%;
+  color:black
 `;
 
 export const Message = styled.span`

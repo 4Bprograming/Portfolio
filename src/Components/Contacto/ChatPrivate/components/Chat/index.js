@@ -5,9 +5,10 @@ import Default from "./../Default";
 import ChatBody from "../ChatBody";
 import ChatFooter from "../ChatFooter";
 
-const Chat = ({ userChat }) => {
-  if (!userChat) return <Default />
-
+const Chat = ({ userChat, user }) => {
+  console.log('userChat de Chat=>', userChat);
+  console.log('user de Chat=>', user);
+  if (!userChat ) return <Default />
   return (
     <C.Container>
       <ChatHeader photoURL={userChat?.photoURL} name={userChat?.name} />
