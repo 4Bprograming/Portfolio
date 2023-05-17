@@ -42,9 +42,19 @@ const Default = () => {
       {/* <MdMessage /> */}
 
       <div>
-        <C.Title style={{ color: "black" }}>Chat 4B</C.Title>
-        <C.Info style={{ color: "black" }}>Click en el Logo para conversar.</C.Info>
-       <MdMessage onClick={handleCreateChat2} />
+        {
+          users.length>1?
+          <div>
+          <C.Title style={{ color: "black" }}>Chat 4B</C.Title>
+          <C.Info style={{ color: "black" }}>Sigamos conversando</C.Info>
+          </div>:
+          <div>
+            <C.Title style={{ color: "black" }}>Chat 4B</C.Title>
+            <C.Info style={{ color: "black" }}>Click en el Logo para conversar.</C.Info>
+           <MdMessage onClick={handleCreateChat2} />
+
+          </div>
+        }
          </div>
     </C.Container>
   );

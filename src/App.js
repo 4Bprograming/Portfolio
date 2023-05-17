@@ -14,7 +14,7 @@ function App() {
           <Route exact path="/chat" element={<ChatPrivate />} />
         </Routes>
 
-        <Button />
+        
       </div>
     </>
   );

@@ -4,6 +4,8 @@ import Footer from '../Footer/Footer'
 import Landing from '../Landing/Landing'
 import NavBar from '../Navbar/Navbar'
 import Skills from '../Skills/Skills'
+import Button from '../Contacto/ChatPrivate/Button'
+
 
 function Español() {
   return (
@@ -13,6 +15,7 @@ function Español() {
               <Skills />
               <Contact/>
               <Footer />
+              <Button />
     </div>
   )
 }
