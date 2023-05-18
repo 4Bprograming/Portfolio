@@ -6,55 +6,44 @@ import { auth, db } from "../../services/firebase";
 import * as EmailValidator from "email-validator";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useCollection } from "react-firebase-hooks/firestore";
-import Default4b from "../Default copy";
 const getUser = (users, userLogged) =>
   users?.filter((user) => user !== userLogged?.email)[0];
 
-const Default = () => {
-  const [user] = useAuthState(auth);
-  const users = [user.email, "4b.programming@gmail.com"];
- if (user.email==="4b.programming@gmail.com"){
-  return <Default4b/>
- }
-  let getUserItem
-  let refChat2
-  let chatsSnapshot2
-console.log('HOLADEAFAULT');
+const Default4b = () => {
+//   const [user] = useAuthState(auth);
+//   const users = [user.email, "4b.programming@gmail.com"];
+//   console.log("usersDefault", users);
+//   let getUserItem
+//   let refChat2
+//   let chatsSnapshot2
+// console.log('HOLADEAFAULT');
+//   let refChat3 = db
+//   .collection("chats")
+//   .where("users", "array-contains", user.email);
   
+//   const [chatsSnapshot3] = useCollection(refChat3);
 
-  function Busqueda(algo) {
-    return useCollection(algo);
-  }
-  if (user.email !== "4b.programming@gmail.com") {
-    console.log('USERS.30=>',user);
-    //   [getUserItem] = Busqueda(
-    //   db.collection("users").where("email", "==",user.email)
-    // );
-     refChat2 = db
-      .collection("chats")
-      .where("users", "array-contains", user.email);
-   [chatsSnapshot2] = Busqueda(refChat2);
-  }
+  
+  
  
   
-  const handleCreateChat2 = () => {
-    const emailInput = "4b.programming@gmail.com";
+//   const handleCreateChat2 = () => {
+//     const emailInput = "4b.programming@gmail.com";
     
-    if (!emailInput) return;
+//     if (!emailInput) return;
     
-    if (!EmailValidator.validate(emailInput)) {
-      return alert("E-mail inválido!");
-    } else if (emailInput === user.email) {
-      return alert("Insira um e-mail diferente do seu!");
-    }
+//     if (!EmailValidator.validate(emailInput)) {
+//       return alert("E-mail inválido!");
+//     } else if (emailInput === user.email) {
+//       return alert("Insira um e-mail diferente do seu!");
+//     }
     
-    db.collection("chats").add({
-      users: [user.email, emailInput],
-    });
-  };
+//     db.collection("chats").add({
+//       users: [user.email, emailInput],
+//     });
+//   };
   
-  let veremos= chatsSnapshot2?.docs.length
-  console.log("VEREMOOOOOOOSSS", veremos);
+
   
   return (
     <C.Container>
@@ -62,18 +51,11 @@ console.log('HOLADEAFAULT');
 
       <div>
         
-         {
-          veremos>0?
-          <div>  <C.Info style={{ color: "black" }}>Conversemos</C.Info>
-          </div>:
-          <div>
-            <C.Title style={{ color: "black" }}>Chat 4B</C.Title>
-            <C.Info style={{ color: "black" }}>Click en el Logo para conversar.</C.Info>
-            <MdMessage onClick={handleCreateChat2} />
+       
+         <C.Info style={{ color: "black" }}>Conversemos</C.Info>
+        
 
-          </div>
-
-         }
+        
          
          
         
@@ -82,7 +64,7 @@ console.log('HOLADEAFAULT');
   );
 };
 
-export default Default;
+export default Default4b;
 
 // const getUser = (users, userLogged) =>
 // users?.filter((user) => user !== userLogged?.email)[0];

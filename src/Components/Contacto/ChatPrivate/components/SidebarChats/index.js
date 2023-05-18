@@ -20,7 +20,7 @@ const SidebarChats = ({ setUserChat, userChat }) => {
   //  console.log('refChat2', refChat2);
   const [chatsSnapshot] = useCollection(refChat);
   const [chatsSnapshot2] = useCollection(refChat2);
-  // console.log('chatsSnapshot', chatsSnapshot2)
+  console.log('chatsSnapshot', chatsSnapshot)
 
   return (
     <C.Container>
