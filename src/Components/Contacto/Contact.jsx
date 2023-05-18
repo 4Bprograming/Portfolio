@@ -22,7 +22,7 @@ function Contact() {
               <img src={whatsapp}  className='gitHub' />
           </a>
          
-          <a href='https://www.instagram.com/4b_programing/'>
+          <a href='https://www.instagram.com/4b_programming/'>
               <BsInstagram className='instagram'/>
           </a>
           <span style={{ color: "white" , fontSize: "20px", textDecoration: 'inherit' }}>Venezuela</span>
