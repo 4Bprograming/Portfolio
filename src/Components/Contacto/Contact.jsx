@@ -19,7 +19,7 @@ function Contact() {
           <span style={{ textDecoration: 'inherit', color: 'inherit', fontSize: "20px" }}>Argentina</span>
           <a href='https://api.whatsapp.com/send?phone=5492612060231'>
               {/* <AiFillGithub className='gitHub'/> */}
-              <img src={whatsapp}  className='gitHub' />
+              <img src={whatsapp}  className='gitHub' alt="whatsapp" />
           </a>
          
           <a href='https://www.instagram.com/4b_programming/'>
@@ -28,7 +28,7 @@ function Contact() {
           <span style={{ color: "white" , fontSize: "20px", textDecoration: 'inherit' }}>Venezuela</span>
           <a href='https://api.whatsapp.com/send?phone=584127471315'>
               {/* <AiFillGithub className='gitHub'/> */}
-              <img src={whatsapp}  className='gitHub' />
+              <img src={whatsapp}  className='gitHub' alt="gitHub"/>
               
           </a>
           </div>

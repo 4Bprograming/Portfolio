@@ -9,7 +9,7 @@ function Button() {
         <Link to="/chat" target="_blank"  className='btn-flotante'>
            <button>
             {/* Chatea con nosotros */}
-            <img src={chat} alt="" width="150px" height="150px" className='img-chat' />
+            <img src={chat} alt="chat" width="150px" height="150px" className='img-chat' />
            </button>
         </Link>
         
