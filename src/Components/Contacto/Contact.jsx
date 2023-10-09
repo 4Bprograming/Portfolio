@@ -26,7 +26,7 @@ function Contact() {
               <BsInstagram className='instagram'/>
           </a>
           <span style={{ color: "white" , fontSize: "20px", textDecoration: 'inherit' }}>Venezuela</span>
-          <a href='https://api.whatsapp.com/send?phone=584127471315'>
+          <a href='https://api.whatsapp.com/send?phone=584129073025'>
               {/* <AiFillGithub className='gitHub'/> */}
               <img src={whatsapp}  className='gitHub' alt="gitHub"/>
               
